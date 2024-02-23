@@ -34,7 +34,7 @@ module.exports = function(grunt) {
     cssmin: {
       dist: {
         files: {
-          'dist/css/style.min.css': ['stylesheets/css/site.css', 'stylesheets/css/style.css']
+          'style.min.css': ['stylesheets/css/site.css', 'stylesheets/css/style.css']
         }
       }
     },
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'dist/js/m.min.js': ['scripts/m.js']
+          'm.min.js': ['scripts/m.js']
         }
       }
     },
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     concat: {
       js: {
         src: ['scripts/zepto.min.js', 'dist/js/m.min.js'],
-        dest: 'dist/js/m.min.js',
+        dest: 'm.min.js',
       }
     }
 
